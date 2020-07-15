@@ -1,10 +1,10 @@
 Choose motors type for the robotic arm
-Design the electrical curcuit for the control system that consists of:
-    Arduino microcontoller
+Design the electrical circuit for the control system that consists of:
+    Arduino microcontroller
     Servo motor to represent the robot arm
-    Potentiometer (variabel resistor) to change the other arm's motor angle of rotation 
+    Potentiometer (variablre resistor) to change the other arm's motor angle of rotation 
 Code the Arduino microcontroller to operate as desired
-    The arduino reads the potentiometer's value via the analog pin
+    The Arduino reads the potentiometer's value via the analog pin
     It scales that value to match the servo motor angles values
     It sets the servo motor to rotate with that scaled angle
 Rotate one motor for the other motor to rotate simultaneously
