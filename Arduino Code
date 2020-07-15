@@ -1,0 +1,24 @@
+#include <Servo.h>
+Servo ServoMotor; //Define my servo
+
+int potPin = A0; //Connect the potentiometer to analog pin A0
+int value; //Variable assigned to read the value from the analog pin
+  
+
+void setup(){
+  
+  ServoMotor.attach(2); //Attaches the servo to the digital pin number 2
+}
+
+void loop(){
+  
+  //Reading the potentiometer value between 0 and 1023
+  value = analogRead(potPin); 
+  
+  //Scaling the potentiometer value to a servo motor angle between 0 and 180
+  value = map(value, 0, 1023, 0, 180); 
+  
+  //Setting the servo motor to rotate with the specified angle
+  ServoMotor.write(value); 
+  delay(10);
+}
